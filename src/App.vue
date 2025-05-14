@@ -1,8 +1,8 @@
 <template>
-  <div class="w-screen min-h-screen relative bg-light text-dark">
+  <div class="min-h-screen relative bg-light text-dark">
     <nav-bar />
     <router-view class="pt-20 px-5" />
-    <!-- <contact-footer /> -->
+    <contact-footer />
   </div>
 </template>
 

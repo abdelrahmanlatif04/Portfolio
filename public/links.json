@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Facebook",
+    "img": "/facebook",
+    "dist": "https://www.facebook.com/3bdellatiif4"
+  },
+  {
+    "title": "X (Twitter)",
+    "img": "/twitter",
+    "dist": "https://twitter.com/3bdellatiif"
+  },
+  {
+    "title": "LinkedIn",
+    "img": "/linkedin",
+    "dist": "https://www.linkedin.com/in/abdelrahmanlatif/"
+  },
+  {
+    "title": "Github",
+    "img": "/github",
+    "dist": "https://github.com/abdelrahmanlatif04"
+  },
+  {
+    "title": "Whatsapp",
+    "img": "/whatsapp",
+    "dist": "https://wa.me/+21157933363"
+  },
+  {
+    "title": "Mail",
+    "img": "/mail",
+    "dist": "mailto:abdelrahmanlatif04@gmail.com"
+  }
+]

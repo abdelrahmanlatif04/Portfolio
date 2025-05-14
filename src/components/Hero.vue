@@ -1,5 +1,5 @@
 <template>
-  <div class="flex py-0 w-full h-[45vh] justify-center items-center">
+  <div class="flex w-full h-[45vh] justify-center items-center">
     <p class="text-7xl font-semibold w-2/5">Hello,I'm Abdelrahman</p>
     <p class="text-2xl text-primary self-end px-3">
       A passionate 3<sup>rd</sup>-year CSE student loves <br />

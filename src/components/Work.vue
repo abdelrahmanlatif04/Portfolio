@@ -1,12 +1,28 @@
 <template>
-  <div>
-    <project-card />
+  <div class="flex flex-wrap md:flex-col gap-10 mx-auto ">
+    <project-card :project="project" />
+    <project-card :project="project" />
+    <project-card :project="project" />
+    <project-card :project="project" />
+    <project-card :project="project" />
   </div>
 </template>
 
 <script>
 import ProjectCard from "./Project-card.vue";
 export default {
+  data() {
+    return {
+      project: {
+        id: "01",
+        name: "Portfolio Website",
+        description:
+          "A personal website showcasi personal website showcasi personal website showcasi personal website showcasi personal website showcasi personal website showcasi personal website showcasi personal website showcasi personal website showcasi personal website showcasi personal website showcasi personal website showcasi personal website showcasi personal website showcasi personal website showcasi personal website showcasi personal website showcasi personal  my projects and blogs.",
+        image: "https://placehold.co/600x400",
+        link: "/portfolio",
+      },
+    };
+  },
   components: { ProjectCard },
 };
 </script>

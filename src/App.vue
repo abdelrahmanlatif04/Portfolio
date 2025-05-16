@@ -1,11 +1,12 @@
 <template>
-  <div class="min-h-screen relative bg-light text-dark">
+  <div
+    class="min-h-screen relative w-[calc(100%-20px)] md:w-[calc(100%-160px)] mx-auto"
+  >
     <nav-bar />
-    <router-view class="pt-20 px-5" />
+    <router-view class="pt-[70px] min-h-[calc(100%-70px)]" />
     <contact-footer />
   </div>
 </template>
-
 <script>
 import NavBar from "./components/Nav-bar.vue";
 import ContactFooter from "./components/Contact-footer.vue";

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="max-w-sm md:max-w-5xl flex flex-col md:flex-row-reverse gap-6 p-4 rounded-lg md:rounded-none shadow md:shadow-none border-b border-dark mx-auto"
+    class="max-w-sm md:max-w-full flex flex-col md:flex-row-reverse gap-6 p-4 rounded-lg md:rounded-none shadow md:shadow-none border md:border-t-0 md:border-x-0 md:border-dark mx-auto"
   >
     <img
       src="https://placehold.co/600x400"
@@ -9,7 +9,7 @@
     />
 
     <div class="flex flex-col justify-between gap-4 w-full">
-      <h2 class="text-2xl md:text-3xl font-bold text-dark">
+      <h2 class="text-2xl md:text-3xl text-dark">
         {{ `${project.id}  ${project.name}` }}
       </h2>
 

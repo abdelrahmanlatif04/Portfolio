@@ -1,7 +1,6 @@
 <template>
-  <div class="flex justify-between px-5 text-sm md:text-md lg:text-lg">
-    <div class="text-secondary">Abdelrahman Ibrahem - 2025</div>
-    <ul class="flex gap-3">
+  <div class="py-3 text-sm md:text-md lg:text-lg">
+    <ul class="flex justify-center items-center gap-3">
       <li v-for="link in links" :key="link">
         <a class="hover:opacity-75" target="_blank" :href="link.dist">{{
           link.title

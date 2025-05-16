@@ -1,4 +1,5 @@
 import { createApp } from "vue";
+import { createPinia } from "pinia";
 import { createRouter, createWebHistory } from "vue-router";
 import "./style.css";
 import App from "./App.vue";
@@ -7,6 +8,9 @@ import Home from "./components/Home.vue";
 import Work from "./components/Work.vue";
 import About from "./components/About.vue";
 import Contact from "./components/Contact.vue";
+import ProjectDetails from "./components/Project-details.vue";
+
+const pinia = createPinia();
 
 const routes = [
   {
@@ -28,6 +32,12 @@ const routes = [
   },
 
   {
+    name: "Project details",
+    path: "/project/:id",
+    component : ProjectDetails,
+    props : true
+  },
+  {
     name: "Home",
     path: "/",
     component: Home,
@@ -39,4 +49,4 @@ const router = createRouter({
   routes,
 });
 
-createApp(App).use(router).mount("#app");
+createApp(App).use(pinia).use(router).mount("#app");

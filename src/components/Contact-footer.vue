@@ -28,6 +28,12 @@ export default {
           dist: "https://www.linkedin.com/in/abdelrahmanlatif/",
         },
       ],
+
+      li: {
+        Facebook: "https://www.facebook.com/3bdellatiif4",
+        Twitter: "https://twitter.com/3bdellatiif",
+        LinkedIn: "https://www.linkedin.com/in/abdelrahmanlatif/",
+      },
     };
   },
 };

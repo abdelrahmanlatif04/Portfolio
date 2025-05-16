@@ -1,23 +1,26 @@
 <template>
   <section class="flex items-center justify-center">
-    <div class="bg-light w-full flex flex-col gap-5">
-      <div class="flex items-center h-[590px]">
-        <div class="w-1/2 h-full flex flex-col justify-around">
-          <div class="text-[60px] font-semibold">
+    <div class="bg-light w-full flex flex-col gap-8">
+      <div
+        class="flex flex-col-reverse gap-6 md:flex-row items-center md:h-[590px]"
+      >
+        <div
+          class="md:w-1/2 h-full flex flex-col gap-4 justify-between text-center md:text-start"
+        >
+          <div class="text-4xl md:text-[60px] font-semibold">
             Hi I'm Abdelrahman Front-end developer
           </div>
           <div class="text-2xl text-primary">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia
-            reiciendis architecto pariatur perferendis mollitia laboriosam
-            voluptatibus id omnis facilis debitis necessitatibus, dolores saepe
-            qui, itaque delectus eveniet sequi rem vero quo ea consectetur
-            consequatur iusto. Sequi id sint harum beatae quia quis accusamus,
-            atque dolorem voluptatem impedit vel animi consequatur.
+            I'm currently focused on frontend development using modern
+            frameworks like Vue.js and Nuxt.js. I enjoy building clean,
+            responsive user interfaces and crafting seamless digital experiences
+            with performance and accessibility in mind.
           </div>
           <div class="text-2xl text-primary">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia
-            reiciendis arci id sint harum beatae quia quis accusamus, atque
-            dolorem voluptatem impedit vel animi consequatur.
+            Now I’m a CSE student at Aswan University — currently
+            <!-- working on personal and freelance projects while  -->
+            seeking for new opportunities to grow in real-world development
+            environments.
           </div>
         </div>
         <img src="/avatar.jpg" class="mx-auto h-full rounded-lg" />
@@ -38,30 +41,27 @@
         </div>
       </div>
 
-      <div class="flex justify-between items-center">
+      <div
+        class="grid truncate gap-2 grid-cols-1 place-content-center md:grid-cols-2 md:grid-rows-2"
+      >
         <router-link
           to="/contact"
-          class="text-dark border-b border-black w-fit transition-all hover:tracking-wider hover:font-semibold"
+          class="text-dark row-span-2 place-content-end mx-auto md:mx-0 h-fit my-auto border-b border-black w-fit transition-all hover:tracking-wider hover:font-semibold"
           target="_blank"
           >I'm happy to help you with your next project →</router-link
         >
-
-        <div class="flex flex-col justify-center gap-2 flex-grow items-center">
-          <div class="flex flex-col justify-center">
-            <a
-              class="text-lg font-semibold text-wrap"
-              target="_blank"
-              href="mailto:abdelrahmanlatif04@gmail.com"
-              >abdelrahmanlatif04@gmail.com</a
-            >
-            <a
-              class="underline underline-offset-4 transition-all hover:tracking-wider hover:font-semibold"
-              href="./Abdelrahman Ibrahem's resume.pdf"
-              target="_blank"
-              >See my CV</a
-            >
-          </div>
-        </div>
+        <a
+          class="text-lg md:font-semibold text-wrap mx-auto md:mx-0 ml-auto"
+          target="_blank"
+          href="mailto:abdelrahmanlatif04@gmail.com"
+          >abdelrahmanlatif04@gmail.com</a
+        >
+        <a
+          class="underline underline-offset-4 w-fit mx-auto md:mx-0 ml-auto transition-all hover:tracking-wider hover:font-semibold"
+          href="./Abdelrahman Ibrahem's resume.pdf"
+          target="_blank"
+          >See my CV</a
+        >
       </div>
     </div>
   </section>
@@ -87,4 +87,5 @@ const skills = ref([
 <style scoped>
 .black-to-blue {
   filter: invert(1) hue-rotate(190deg) brightness(1.2);
-}</style>
+}
+</style>

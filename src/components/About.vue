@@ -23,7 +23,7 @@
             environments.
           </div>
         </div>
-        <img src="/avatar.jpg" class="mx-auto h-full rounded-lg" />
+        <img src="../assets/avatar.jpg" class="mx-auto h-full rounded-lg" />
       </div>
 
       <div>

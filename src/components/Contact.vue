@@ -9,13 +9,13 @@
     >
       <!-- Front (Avatar) -->
       <img
-        src="/avatar2.jpg"
+        src="../assets/avatar2.jpg"
         class="front w-full h-full absolute rounded-full [backface-visibility:hidden] object-cover"
       />
 
       <!-- Back (QR Code) -->
       <img
-        src=".././assets/qr-code.png"
+        src="../assets/qr-code.png"
         alt="QR Code"
         class="back w-full h-full absolute rounded-2xl [backface-visibility:hidden] object-cover [transform:rotateY(180deg)]"
       />

@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-wrap md:flex-col gap-10">
-    <project-card v-for="project in projects" :project="project" />
+    <project-card v-for="project in projects" :key="project" :project="project" />
   </div>
 </template>
 

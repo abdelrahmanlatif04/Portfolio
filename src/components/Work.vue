@@ -41,24 +41,28 @@ export default {
           link: "https://abdelrahmanlatif04.github.io/multi-step-form/",
         },
 
-        //{
-        //   name: "Tic Tac Toe",
-        //   description:"",
-        //   image: "",
-        //   link: "https://tic-tac-toe-hero.vercel.app/",
-        // },
-        // {
-        //   name: "Boulangerie Pâtissier",
-        //   description:"",
-        //   image: "",
-        //   link: "https://abdelrahmanlatif04.github.io/Bussiness/dist/index.html",
-        // },
-        // {
-        //   name: "winner coupon card",
-        //   description:"",
-        //   image: "",
-        //   link: "https://abdelrahmanlatif04.github.io/coupon-card/dist/index.html",
-        // },
+        {
+          name: "Tic Tac Toe",
+          description:
+            "This is a dynamic Tic-Tac-Toe game built with Vue.js and styled using Tailwind CSS. It features three unique game modes—Classic, Infinity, and Ultimate—each adding a creative twist to the traditional gameplay. From the nostalgic feel of Classic Mode to the strategy-driven Ultimate Mode, this project showcases both frontend logic and responsive design",
+
+          image: "/project-5.jpg",
+          link: "https://tic-tac-toe-hero.vercel.app/",
+        },
+        {
+          name: "Winner coupon card",
+          description:
+            "A sleek video game store coupon page featuring a 25% discount and a stylish 3D flip card effect, all built with Tailwind CSS. Designed to catch attention and deliver deals with a smooth, interactive twist.",
+          image: "/project-6.png",
+          link: "https://abdelrahmanlatif04.github.io/coupon-card/dist/index.html",
+        },
+        {
+          name: "Boulangerie Pâtissier",
+          description:
+            "A clean, responsive landing page for a French-style bakery, built with Tailwind CSS. It showcases essential info like opening hours, location, facilities, and social links, with a simple contact section for easy communication. Elegant, inviting, and made to whet your digital appetite.",
+          image: "/project-7.png",
+          link: "https://abdelrahmanlatif04.github.io/Bussiness/dist/index.html",
+        },
       ],
     };
   },

@@ -1,8 +1,9 @@
 <template>
   <div class="flex flex-col gap-10">
     <hero />
-    <work />
     <about />
+
+    <work />
   </div>
 </template>
 

@@ -2,14 +2,18 @@
   <div
     class="mx-auto flex flex-col md:flex-row-reverse gap-8 p-6 md:pb-4 md:p-0 rounded-lg md:rounded-none border md:border-b-2 md:border-0 border-primary md:border-black shadow-sm hover:shadow-md md:hover:shadow-none md:shadow-none transition-all duration-300"
   >
-    <div class="md:w-1/2 h-auto shadow overflow-hidden rounded-lg">
+    <a
+      :href="project.link"
+      target="_blank"
+      class="md:w-1/2 h-auto shadow overflow-hidden rounded-lg"
+    >
       <img
         :src="project.image"
         alt="Project Screenshot"
-        class="w-full h-full object-cover transition-transform duration-500 hover:scale-[1.02] cursor-pointer"
+        class="w-full h-full object-cover transition-transform duration-500 hover:scale-[1.1] cursor-pointer"
         loading="lazy"
       />
-    </div>
+    </a>
 
     <div class="md:w-1/2 flex flex-col justify-between py-1 md:py-2">
       <div>

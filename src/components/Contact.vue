@@ -78,7 +78,7 @@ const links = ref([
   {
     title: "Whatsapp",
     img: "/whatsapp",
-    dist: "https://wa.me/+21157933363",
+    dist: "https://wa.me/+201157933363",
   },
   {
     title: "Mail",

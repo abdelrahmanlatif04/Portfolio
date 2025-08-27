@@ -7,7 +7,9 @@
         <div
           class="md:w-1/2 h-full flex flex-col gap-4 justify-between text-center md:text-start"
         >
-          <div class="text-4xl md:text-[60px] font-semibold">
+          <div
+            class="text-4xl md:text-[60px] font-semibold leading-[50px] md:leading-[60px]"
+          >
             Hi I'm Abdelrahman Front-end developer
           </div>
           <div class="text-2xl text-primary">

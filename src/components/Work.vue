@@ -69,17 +69,6 @@ export default {
     };
   },
   components: { ProjectCard },
-  computed: {
-    subArr() {
-      var length = Math.ceil(this.data.length / 2);
-
-      const result = new Array(length).fill().map((i) => {
-        return this.data.splice(0, length);
-      });
-
-      return result;
-    },
-  },
 };
 </script>
 

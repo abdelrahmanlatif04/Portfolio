@@ -1,21 +1,11 @@
 <template>
   <router-link
     to="/contact"
-    class="fixed right-6 bottom-6 group z-50 content"
+    class="fixed right-6 bottom-6 group z-50 before:opacity-0 hover:before:opacity-100 before:content-['Contacts'] before:absolute before:bottom-16 before:left-1/2 before:-translate-x-1/2 before:bg-primary before:w-max before:text-white before:text-sm before:px-3 before:py-1 before:rounded-lg before:shadow-md before:transition-all before:duration-200 flex items-center justify-center w-16 h-16 rounded-full bg-white/80 text-primary shadow-lg backdrop-blur-sm transition duration-300 animate-levitate"
     @mouseover="hovered = true"
     @mouseleave="hovered = false"
   >
-    <span
-      v-if="hovered"
-      class="absolute bottom-20 left-1/2 -translate-x-1/2 bg-primary w-max text-white text-sm px-3 py-1 rounded-lg shadow-md transition-opacity duration-200"
-    >
-      Contact Me
-    </span>
-    <div
-      class="flex items-center justify-center w-16 h-16 rounded-full bg-white/80 text-primary shadow-lg backdrop-blur-sm hover:scale-110 transition-transform duration-300 animate-levitate"
-    >
-      <Icon icon="material-symbols:android-contacts" class="text-4xl" />
-    </div>
+    <Icon icon="material-symbols:android-contacts" class="text-4xl" />
   </router-link>
 </template>
 

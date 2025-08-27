@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2 class="text-2xl font-semibold text-gray-800 mb-6">🛠️ Skills</h2>
-    <ul class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 ceent">
+    <ul class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
       <li
         v-for="skill in skills"
         :key="skill"
@@ -16,7 +16,6 @@
 
 <script setup>
 import { Icon } from "@iconify/vue";
-
 const skills = [
   { name: "HTML", icon: "devicon:html5" },
   { name: "CSS", icon: "devicon:css3" },

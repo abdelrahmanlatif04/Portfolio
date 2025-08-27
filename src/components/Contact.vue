@@ -39,7 +39,7 @@
         target="_blank"
         class="w-full black-blue bg-white cursor-pointer rounded-lg pr-2 pl-5 hover:pl-9 smooth py-3 flex h-12 hover:h-14 items-center text-lg hover:text-xl gap-3 relative overflow-hidden shadow-lg my-1 hover:my-0 transition-all before:bg-primary before:h-full before:w-3 before:absolute before:left-0 hover:before:w-8 before:transition-all before:duration-300 duration-300"
       >
-        <img :src="'./' + link.img + '.webp'" class="h-[90%]" />
+        <icon :icon="link.icon" class="h-7 text-3xl" />
         <p>
           {{ link.title }}
         </p>
@@ -50,47 +50,47 @@
 
 <script setup>
 import { ref } from "vue";
+import { Icon } from "@iconify/vue";
+
 const flipped = ref(false);
 
-const rotation = ref(null);
-
-const links = ref([
+const links = [
   {
     title: "Facebook",
-    img: "/facebook",
+    icon: "ic:outline-facebook",
     dist: "https://www.facebook.com/3bdellatiif4",
   },
   {
     title: "X (Twitter)",
-    img: "/twitter",
+    icon: "hugeicons:new-twitter",
     dist: "https://twitter.com/3bdellatiif",
   },
   {
     title: "LinkedIn",
-    img: "/linkedin",
+    icon: "mdi:linkedin",
     dist: "https://www.linkedin.com/in/abdelrahmanlatif/",
   },
   {
     title: "Github",
-    img: "/github",
+    icon: "mdi:github",
     dist: "https://github.com/abdelrahmanlatif04",
   },
   {
     title: "Whatsapp",
-    img: "/whatsapp",
+    icon: "ic:baseline-whatsapp",
     dist: "https://wa.me/+201157933363",
   },
   {
     title: "Mail",
-    img: "/mail",
+    icon: "material-symbols:mail-rounded",
     dist: "mailto:abdelrahmanlatif04@gmail.com",
   },
-]);
-
-const rotateCard = function () {
-  rotation.value =
-    rotation.value == "rotateY(180deg)" ? null : "rotateY(180deg)";
-};
+  {
+    title: "Website",
+    icon: "tabler:world-www",
+    dist: "https://3bdellatiif.vercel.app/",
+  },
+];
 </script>
 
 <style scoped>

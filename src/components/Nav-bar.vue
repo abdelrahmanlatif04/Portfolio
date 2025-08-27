@@ -1,6 +1,6 @@
 <template>
   <div
-    class="absolute py-5 left-0 top-0 w-full bg-main flex items-center gap-10 mx-auto justify-between"
+    class="py-5 w-full bg-main flex items-center gap-10 mx-auto justify-between"
   >
     <router-link
       class="text-xl font-bold tracking-wide hover:tracking-widest cursor-pointer transition-all hover:opacity-80"

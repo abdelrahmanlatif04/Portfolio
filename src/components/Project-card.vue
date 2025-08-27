@@ -1,6 +1,6 @@
 <template>
   <div
-    class="mx-auto max-w-[350px] h-fit my-auto xl:max-w-max xl:w-3/4 flex flex-col xl:flex-row-reverse gap-8 p-6 xl:pb-4 xl:p-0 rounded-lg xl:rounded-none xl:border-b-2 xl:border-black shadow-xl hover:shadow-xl xl:hover:shadow-none xl:shadow-none transition-all duration-300 bg-white xl:bg-transparent"
+    class="mx-auto max-w-[350px] h-fit my-auto xl:max-w-[1100px] xl:w-3/4 flex flex-col xl:flex-row-reverse gap-8 p-6 xl:pb-4 xl:p-0 rounded-lg xl:rounded-none xl:border-b-2 xl:border-black shadow-xl hover:shadow-xl xl:hover:shadow-none xl:shadow-none transition-all duration-300 bg-white xl:bg-transparent"
   >
     <a
       :href="project.link"
@@ -22,7 +22,8 @@
         </h2>
 
         <p class="text-gray-600 text-base xl:text-base leading-relaxed mb-6">
-          {{ project.description }}
+          {{ project.description.slice(0, 300) }}
+          {{ project.description.length > 300 ? "..." : "" }}
         </p>
       </div>
 

@@ -1,5 +1,7 @@
 <template>
-  <div class="flex flex-wrap md:flex-col gap-10">
+  <div
+    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-1 gap-10"
+  >
     <project-card
       v-for="project in projects"
       :key="project"
@@ -67,6 +69,17 @@ export default {
     };
   },
   components: { ProjectCard },
+  computed: {
+    subArr() {
+      var length = Math.ceil(this.data.length / 2);
+
+      const result = new Array(length).fill().map((i) => {
+        return this.data.splice(0, length);
+      });
+
+      return result;
+    },
+  },
 };
 </script>
 

@@ -1,27 +1,27 @@
 <template>
   <div
-    class="mx-auto flex flex-col md:flex-row-reverse gap-8 p-6 md:pb-4 md:p-0 rounded-lg md:rounded-none border md:border-b-2 md:border-0 border-primary md:border-black shadow-sm hover:shadow-md md:hover:shadow-none md:shadow-none transition-all duration-300"
+    class="mx-auto max-w-[350px] h-fit my-auto xl:max-w-max xl:w-3/4 flex flex-col xl:flex-row-reverse gap-8 p-6 xl:pb-4 xl:p-0 rounded-lg xl:rounded-none xl:border-b-2 xl:border-black shadow-xl hover:shadow-xl xl:hover:shadow-none xl:shadow-none transition-all duration-300 bg-white xl:bg-transparent"
   >
     <a
       :href="project.link"
       target="_blank"
-      class="md:w-1/2 h-auto shadow overflow-hidden rounded-lg"
+      class="xl:w-1/2 h-auto overflow-hidden rounded-lg"
     >
       <img
         :src="project.image"
         alt="Project Screenshot"
-        class="w-full h-full object-cover transition-transform duration-500 hover:scale-[1.1] cursor-pointer"
+        class="object-cover transition-transform duration-500 hover:scale-[1.1] cursor-pointer"
         loading="lazy"
       />
     </a>
 
-    <div class="md:w-1/2 flex flex-col justify-between py-1 md:py-2">
+    <div class="xl:w-1/2 flex flex-col justify-between py-1 xl:py-2">
       <div>
-        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-3 md:mb-4">
+        <h2 class="text-2xl xl:text-4xl font-bold text-gray-900 mb-3 xl:mb-5">
           {{ project.name }}
         </h2>
 
-        <p class="text-gray-600 text-base md:text-[15px] leading-relaxed mb-6">
+        <p class="text-gray-600 text-base xl:text-base leading-relaxed mb-6">
           {{ project.description }}
         </p>
       </div>
@@ -32,9 +32,7 @@
         rel="noopener noreferrer"
         class="inline-flex items-center border-b border-black w-fit text-black transition-all"
       >
-        <span
-          class="pb-0.5 transition-all hover:font-medium hover:tracking-wider"
-        >
+        <span class="pb-0.5 transition-all hover:tracking-wider">
           See the live demo
         </span>
         <svg

@@ -1,5 +1,5 @@
 <template>
-  <section class="flex items-center justify-center px-4 py-12">
+  <section class="flex items-center justify-center px-4">
     <div class="bg-light w-full flex flex-col gap-16 max-w-6xl">
       <!-- Hero Section -->
       <div
@@ -44,71 +44,20 @@
         </div>
       </div>
 
-      <!-- Skills Section -->
-      <div>
-        <h2 class="text-2xl font-semibold text-gray-800 mb-6">🛠️ Skills</h2>
-        <ul class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 ceent">
-          <li
-            v-for="skill in skills"
-            :key="skill"
-            class="flex flex-col items-center gap-3 bg-secondary/10 hover:bg-secondary/20 transition rounded-xl p-5 shadow-sm"
-          >
-            <icon :icon="skill.icon" class="w-10 h-10 object-contain" />
-            <span class="font-medium text-secondary text-lg">{{
-              skill.name
-            }}</span>
-          </li>
-        </ul>
-      </div>
-
-      <!-- <div class="grid gap-4 md:grid-cols-2">
-        <router-link
-          to="/contact"
-          class="text-dark text-lg md:text-xl mt-auto border-black w-fit transition-all hover:tracking-wider hover:font-semibold"
-        >
-          I'm happy to help you with your next project →
-        </router-link>
-
-        <div class="flex flex-col items-center md:items-end gap-3">
-          <a
-            class="text-lg md:font-semibold transition hover:text-primary"
-            href="mailto:abdelrahmanlatif04@gmail.com"
-            target="_blank"
-          >
-            abdelrahmanlatif04@gmail.com
-          </a>
-          <a
-            class="underline underline-offset-4 transition-all hover:tracking-wider hover:font-semibold"
-            href="./Abdelrahman Ibrahem's resume.pdf"
-            target="_blank"
-          >
-            See my CV
-          </a>
-        </div>
-      </div> -->
+      <skills v-if="$route.path === '/about'" />
     </div>
   </section>
 </template>
 
 <script setup>
-import { ref } from "vue";
-import { Icon } from "@iconify/vue";
-const skills = ref([
-  { name: "HTML", icon: "devicon:html5" },
-  { name: "CSS", icon: "devicon:css3" },
-  { name: "JavaScript", icon: "devicon:javascript" },
-  { name: "Python", icon: "devicon:python" },
-  { name: "C++", icon: "devicon:cplusplus" },
-  { name: "TailwindCSS", icon: "devicon:tailwindcss" },
-  { name: "Bootstrap", icon: "devicon:bootstrap" },
-  { name: "Vue.js", icon: "devicon:vuejs" },
-  { name: "Nuxt.js", icon: "devicon:nuxtjs" },
-  { name: "Github", icon: "devicon:github" },
-]);
+import { defineComponent } from "vue";
+import Skills from "./Skills.vue";
+defineComponent({
+  Skills,
+});
 </script>
 
 <style scoped>
-/* Optional: subtle animation on hover */
 img {
   transition: transform 0.3s ease;
 }

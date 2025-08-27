@@ -3,7 +3,7 @@
     class="min-h-screen relative w-[calc(100%-20px)] md:w-[calc(100%-160px)] mx-auto"
   >
     <nav-bar />
-    <router-view class="pt-[70px] min-h-[calc(100%-70px)]" />
+    <router-view class="min-h-[calc(100%-70px)]" />
     <contact-footer />
   </div>
 </template>

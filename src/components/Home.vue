@@ -6,13 +6,14 @@
   </div>
 </template>
 
-<script>
+<script setup>
+import { defineComponent } from "vue";
 import Hero from "./Hero.vue";
 import Work from "./Work.vue";
 import About from "./About.vue";
-export default {
-  components: { Hero, Work, About },
-};
+defineComponent({ Hero, Work, About });
+
+console.log("as");
 </script>
 
 <style></style>

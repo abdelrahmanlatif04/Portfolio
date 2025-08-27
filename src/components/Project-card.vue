@@ -10,7 +10,7 @@
       <img
         :src="project.image"
         alt="Project Screenshot"
-        class="object-cover transition-transform duration-500 hover:scale-[1.1] cursor-pointer"
+        class="object-contain transition-transform duration-500 hover:scale-[1.1] cursor-pointer"
         loading="lazy"
       />
     </a>

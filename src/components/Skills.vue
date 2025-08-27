@@ -5,7 +5,7 @@
       <li
         v-for="skill in skills"
         :key="skill"
-        class="flex flex-col items-center gap-3 bg-secondary/10 hover:bg-secondary/20 transition rounded-xl p-5 shadow-sm"
+        class="flex cursor-default flex-col items-center gap-3 bg-secondary/10 hover:bg-secondary/20 transition rounded-xl p-5 shadow-sm"
       >
         <icon :icon="skill.icon" class="w-10 h-10 object-contain" />
         <span class="font-medium text-secondary text-lg">{{ skill.name }}</span>

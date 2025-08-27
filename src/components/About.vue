@@ -1,5 +1,5 @@
 <template>
-  <section class="flex items-center justify-center px-4">
+  <section class="flex items-center justify-center px-4 relative">
     <div class="bg-light w-full flex flex-col gap-16 max-w-6xl">
       <!-- Hero Section -->
       <div
@@ -39,12 +39,10 @@
           <img
             src="../assets/avatar.jpg"
             alt="Abdelrahman"
-            class="h-80 md:h-full mx-10 rounded-2xl shadow-lg object-cover"
+            class="h-80 md:h-full mx-10 rounded-2xl shadow-lg object-cover transition duration-300 hover:scale-[1.05]"
           />
         </div>
       </div>
-
-      <skills v-if="$route.path === '/about'" />
     </div>
   </section>
 </template>
@@ -56,12 +54,3 @@ defineComponent({
   Skills,
 });
 </script>
-
-<style scoped>
-img {
-  transition: transform 0.3s ease;
-}
-img:hover {
-  transform: scale(1.05);
-}
-</style>

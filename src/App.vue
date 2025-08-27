@@ -4,15 +4,19 @@
   >
     <nav-bar />
     <router-view class="min-h-[calc(100%-70px)]" />
+
+    <skills v-if="$route.path !== '/contact' && $route.path !== '/work'" />
+    <contact-btn v-if="$route.path !== '/contact'" />
     <contact-footer />
   </div>
 </template>
-<script>
+<script setup>
 import NavBar from "./components/Nav-bar.vue";
 import ContactFooter from "./components/Contact-footer.vue";
-export default {
-  components: { NavBar, ContactFooter },
-};
+import Skills from "./components/Skills.vue";
+import ContactBtn from "./components/Contact-btn.vue";
+import { defineComponent } from "vue";
+defineComponent({ NavBar, ContactFooter, Skills, ContactBtn });
 </script>
 
 <style></style>

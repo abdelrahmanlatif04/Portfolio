@@ -1,6 +1,6 @@
 <template>
   <div
-    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-1 gap-10"
+    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-1 gap-10 relative"
   >
     <project-card
       v-for="project in projects"
@@ -12,25 +12,31 @@
 
 <script>
 import ProjectCard from "./Project-card.vue";
+
 export default {
   data() {
     return {
       projects: [
         {
           name: "E-commerce sneakers page",
-          description: `Built a responsive product page using HTML, CSS, and JS with Interactive lightbox gallery & image switcherAdd-to-cart functionality with dynamic updatesMobile-friendly layout & hover effectsFocused on clean UI, DOM manipulation, and responsive design.`,
+          description:
+            "Built a responsive product page using HTML, CSS, and JS with Interactive lightbox gallery & image switcherAdd-to-cart functionality with dynamic updatesMobile-friendly layout & hover effectsFocused on clean UI, DOM manipulation, and responsive design.",
           image: "/project-1.webp",
           link: "https://abdelrahmanlatif04.github.io/E-commerce-product-app/index.html",
         },
+
         {
-          name: "NileVista",
-          description: `A sleek, high-performance landing page built with Vue 3, TailwindCSS, and Vite for an Egyptian tourism company. Features include a dynamic navbar with smooth scrolling, an immersive hero section with a drone video of the Giza Pyramids, interactive displays for top destinations and packages, and a client testimonials section. Fully responsive and optimized for all devices, this design is fully customizable for travel businesses in Egypt.`,
+          name: "Pinterest clone",
+          description:
+            "A Pinterest homepage clone made using Tailwindcss \& Vue js. Implemented a responsive grid layout, hover effects, and a clean modern UI inspired by the original platform.",
           image: "/project-2.webp",
-          link: "https://nile-vista.vercel.app/",
+          link: "https://pinterest-clone-blond.vercel.app/",
         },
+
         {
           name: "Bookmark landing page",
-          description: `A sleek and user-friendly landing page built with Vue.js and TailwindCSS to introduce the Bookmark Manager browser extension. It features a compelling hero section with key extension details, a features section highlighting core functionalities, download links for supported browsers, an FAQ section to address common user questions, and a contact form for direct communication. Fully responsive and optimized for modern web standards.`,
+          description:
+            "A sleek and user-friendly landing page built with Vue.js and TailwindCSS to introduce the Bookmark Manager browser extension. It features a compelling hero section with key extension details, a features section highlighting core functionalities, download links for supported browsers, an FAQ section to address common user questions, and a contact form for direct communication. Fully responsive and optimized for modern web standards.",
           image: "/project-3.webp",
           link: "https://3bdellatif-bookmark.vercel.app/",
         },
@@ -64,6 +70,13 @@ export default {
             "A clean, responsive landing page for a French-style bakery, built with Tailwind CSS. It showcases essential info like opening hours, location, facilities, and social links, with a simple contact section for easy communication. Elegant, inviting, and made to whet your digital appetite.",
           image: "/project-7.webp",
           link: "https://abdelrahmanlatif04.github.io/Bussiness/dist/index.html",
+        },
+        {
+          name: "NileVista",
+          description:
+            "A sleek, high-performance landing page built with Vue 3, TailwindCSS, and Vite for an Egyptian tourism company. Features include a dynamic navbar with smooth scrolling, an immersive hero section with a drone video of the Giza Pyramids, interactive displays for top destinations and packages, and a client testimonials section. Fully responsive and optimized for all devices, this design is fully customizable for travel businesses in Egypt.",
+          image: "/project-8.webp",
+          link: "https://nile-vista.vercel.app/",
         },
       ],
     };

@@ -23,6 +23,8 @@ export default {
             "Built a responsive product page using HTML, CSS, and JS with Interactive lightbox gallery & image switcherAdd-to-cart functionality with dynamic updatesMobile-friendly layout & hover effectsFocused on clean UI, DOM manipulation, and responsive design.",
           image: "/project-1.webp",
           link: "https://abdelrahmanlatif04.github.io/E-commerce-product-app/index.html",
+          sourceCode:
+            "https://github.com/abdelrahmanlatif04/E-commerce-product-app",
         },
 
         {
@@ -31,14 +33,16 @@ export default {
             "A Pinterest homepage clone made using Tailwindcss \& Vue js. Implemented a responsive grid layout, hover effects, and a clean modern UI inspired by the original platform.",
           image: "/project-2.webp",
           link: "https://pinterest-clone-blond.vercel.app/",
+          sourceCode: "https://github.com/abdelrahmanlatif04/pinterest-clone",
         },
 
         {
-          name: "Bookmark landing page",
+          name: "Expense tracker",
           description:
-            "A sleek and user-friendly landing page built with Vue.js and TailwindCSS to introduce the Bookmark Manager browser extension. It features a compelling hero section with key extension details, a features section highlighting core functionalities, download links for supported browsers, an FAQ section to address common user questions, and a contact form for direct communication. Fully responsive and optimized for modern web standards.",
+            "a simple web application that helps you track your financial transactions, including expenses and income. It allows you to easily add and manage your transactions with automatic saving in Local Storage.Your data remains accessible anytime directly from your browser without the need for an external database.",
           image: "/project-3.webp",
           link: "https://3bdellatif-bookmark.vercel.app/",
+          sourceCode: "https://github.com/abdelrahmanlatif04/Expense-Tracker",
         },
 
         {
@@ -47,6 +51,7 @@ export default {
             "A responsive, interactive four-step form built with HTML5, CSS3, and Vanilla JavaScript. It smoothly guides users through personal information input, plan selection with monthly/yearly toggle, optional add-ons, and a final summary with total cost confirmation. Features include intuitive Back/Next navigation, real-time validation with error handling, and engaging UI states for a seamless user experience across all devices.",
           image: "/project-4.webp",
           link: "https://abdelrahmanlatif04.github.io/multi-step-form/",
+          sourceCode: "https://github.com/abdelrahmanlatif04/multi-step-form",
         },
 
         {
@@ -56,6 +61,7 @@ export default {
 
           image: "/project-5.webp",
           link: "https://tic-tac-toe-hero.vercel.app/",
+          sourceCode: "https://github.com/abdelrahmanlatif04/Tic-Tac-Toe",
         },
         {
           name: "Winner coupon card",
@@ -63,6 +69,7 @@ export default {
             "A sleek video game store coupon page featuring a 25% discount and a stylish 3D flip card effect, all built with Tailwind CSS. Designed to catch attention and deliver deals with a smooth, interactive twist.",
           image: "/project-6.webp",
           link: "https://abdelrahmanlatif04.github.io/coupon-card/dist/index.html",
+          sourceCode: "http://github.com/abdelrahmanlatif04/coupon-card",
         },
         {
           name: "Boulangerie Pâtissier",
@@ -70,6 +77,8 @@ export default {
             "A clean, responsive landing page for a French-style bakery, built with Tailwind CSS. It showcases essential info like opening hours, location, facilities, and social links, with a simple contact section for easy communication. Elegant, inviting, and made to whet your digital appetite.",
           image: "/project-7.webp",
           link: "https://abdelrahmanlatif04.github.io/Bussiness/dist/index.html",
+          sourceCode:
+            "https://abdelrahmanlatif04.github.io/Bussiness/dist/index.html",
         },
         {
           name: "NileVista",
@@ -77,6 +86,15 @@ export default {
             "A sleek, high-performance landing page built with Vue 3, TailwindCSS, and Vite for an Egyptian tourism company. Features include a dynamic navbar with smooth scrolling, an immersive hero section with a drone video of the Giza Pyramids, interactive displays for top destinations and packages, and a client testimonials section. Fully responsive and optimized for all devices, this design is fully customizable for travel businesses in Egypt.",
           image: "/project-8.webp",
           link: "https://nile-vista.vercel.app/",
+          sourceCode: "https://github.com/abdelrahmanlatif04/NileVista",
+        },
+        {
+          name: "Bookmark landing page",
+          description:
+            "A sleek and user-friendly landing page built with Vue.js and TailwindCSS to introduce the Bookmark Manager browser extension. It features a compelling hero section with key extension details, a features section highlighting core functionalities, download links for supported browsers, an FAQ section to address common user questions, and a contact form for direct communication. Fully responsive and optimized for modern web standards.",
+          image: "/project-9.webp",
+          link: "https://3bdellatif-bookmark.vercel.app/",
+          sourceCode: "https://github.com/abdelrahmanlatif04/Book-mark",
         },
       ],
     };

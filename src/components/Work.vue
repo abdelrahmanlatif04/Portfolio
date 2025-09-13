@@ -41,7 +41,7 @@ export default {
           description:
             "a simple web application that helps you track your financial transactions, including expenses and income. It allows you to easily add and manage your transactions with automatic saving in Local Storage.Your data remains accessible anytime directly from your browser without the need for an external database.",
           image: "/project-3.webp",
-          link: "https://3bdellatif-bookmark.vercel.app/",
+          link: "https://expense-tracker-sable-six.vercel.app/",
           sourceCode: "https://github.com/abdelrahmanlatif04/Expense-Tracker",
         },
 
